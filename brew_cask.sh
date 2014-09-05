@@ -37,14 +37,18 @@ apps=(
 )
 
 function install_apps {
-  for app in "${apps[@]}"
-  do
+  for app in "${apps[@]}"; do
     brew cask install $app
   done
 }
 
+# checks if Homebrew is installed
 if hash brew 2>/dev/null; then
-  install_apps
+  if brew cask > /dev/null 2>&1; then
+    install_apps
+  else
+    echo 'Homebrew cask is not installed. Please run `brew install brew-cask` to install.'
+  fi
 else
   echo 'Homebrew is not installed.'
 fi
