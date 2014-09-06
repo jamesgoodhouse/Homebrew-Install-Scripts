@@ -2,6 +2,7 @@
 
 apps=(
   adium
+  adobe-reader
   alfred
   android-file-transfer
   android-studio
