@@ -7,34 +7,45 @@ apps=(
   android-file-transfer
   android-studio
   arduino
+  boxer
+  caffeine
   charles
   disk-inventory-x
   dropbox
   firefox
   flux
+  garmin-communicator
+  garmin-express
+  gas-mask
   gitx
   google-chrome
+  google-earth
   inkscape
   iterm2
   karabiner
   keka
   limechat
+  logitech-control-center
   logmein-client
   mou
+  mysqlworkbench
   opera
   pgadmin3
   plex-home-theater
+  rdio
+  rdm
   scummvm
   sequel-pro
   skype
   slack
   sonos
+  spotify
+  sqlite-database-browser
   sublime-text
   transmission
   unrarx
   virtualbox
   vlc
-  xmind
 )
 
 function install_apps {
